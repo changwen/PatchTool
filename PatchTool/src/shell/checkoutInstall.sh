@@ -1,8 +1,9 @@
 #!/bin/bash
 #installCheckout.sh
 old="$2"
-#获得当前运行的shell脚本所在目录
+#获取当前运行的shell脚本所在目录
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 patchList=${DIR}"/patchList.txt"
 
 cat $patchList | while read line
